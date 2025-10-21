@@ -1,0 +1,109 @@
+{
+  "format_version": "1.17.0",
+  "animation_controllers": {
+    "controller.animation.ha4_time": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/tag @s add time_stop",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~"
+          ],
+          "transitions": [
+            {
+              "stop": "query.is_alive"
+            },
+            {
+              "null": "!query.is_alive"
+            }
+          ]
+        },
+        "stop": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/tag @s add time_stop",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~"
+          ],
+          "transitions": [
+            {
+              "default": "query.is_alive"
+            },
+            {
+              "null": "!query.is_alive"
+            }
+          ]
+        },
+        "null": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/kill @s"
+          ]
+        }
+      }
+    },
+
+
+
+    "controller.animation.ha4_quantum_bomb_2": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/tag @s add time_stop",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~"
+          ],
+          "transitions": [
+            {
+              "stop": "(1.0)"
+            },
+            {
+              "null": "!query.is_alive"
+            }
+          ]
+        },
+        "stop": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/tag @s add time_stop",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~",
+            "/execute as @e[r=4, tag=!time_stop, type=!ha4:quantum_bomb] at @s run tp @s ~~~"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            },
+            {
+              "null": "!query.is_alive"
+            }
+          ]
+        },
+        "null": {
+          "on_entry": [
+            "/gamerule sendcommandfeedback false",
+            "/gamerule commandblockoutput false",
+            "/kill @s"
+          ]
+        }
+      }
+    }
+
+
+
+  }
+}

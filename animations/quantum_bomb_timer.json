@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17.0",
+  "animations": {
+    "animation.ha4_quantum_bomb_2_2": {
+      "animation_length": 6,
+      "loop": true,
+      "timeline": {
+        "5": "/event entity @s explode"
+      }
+    }
+
+
+
+  }
+}

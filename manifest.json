@@ -1,0 +1,52 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "this addon is made by Howard Addon",
+    "name": "time stop bp (HowardAddon)",
+    "uuid": "2e67c5f5-5f28-4909-ae54-2abea33ce837",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6b42143c-9dc5-48b1-939a-977720b2d642",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "script",
+      "languaje": "javascript",
+      "uuid": "d5cb3aab-5bb5-4280-9b8c-7a186c8e091f",
+      "version": [ 0, 1, 0 ],
+      "entry": "scripts/howard_time_stop.js"
+    }
+
+  ],
+  "capabilities": [ "script_eval" ],
+  "dependencies": [
+    {
+      "uuid": "539aa298-a92f-4f68-9513-08aba23641e2",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    }
+  ]
+}
