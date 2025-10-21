@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ha4:temporal_fragment"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "212",
+      "101",
+      "212"
+    ],
+    "key": {
+      "0": { "item": "ha4:time_stop" }
+  },
+    "result": [
+      { "item": "ha4:temporal_fragment", "count": 64 }
+    ]
+  }
+}

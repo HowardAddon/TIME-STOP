@@ -1,0 +1,96 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ha4:time",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "time"
+        ]
+      },
+      "animations": {
+        "time": "controller.animation.ha4_time"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "queue_command": {
+          "command": [
+            "gamerule sendcommandfeedback false",
+            "title @p actionbar time will be stop for 10s"
+          ],
+          "target": "self"
+        },
+        "add": {
+          "component_groups": [
+            "time"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "time": {
+      }
+    },
+    "components": {
+      "minecraft:explode": {
+        "fuseLength": 10,
+        "fuseLit": true,
+        "power": 0,
+        "causesFire": false,
+        "fireAffectedByGriefing": true,
+        "destroyAffectedByGriefing": true
+      },
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 0
+      },
+      "minecraft:type_family": {
+        "family": [
+          "inanimate"
+        ]
+      },
+      "minecraft:scale": {
+        "value": 0.1
+      },
+      "minecraft:collision_box": {
+        "width": 0.001,
+        "height": 0.001
+      },
+      "minecraft:health": {
+        "value": 9999,
+        "max": 9999
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:nameable": {},
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    }
+  }
+}

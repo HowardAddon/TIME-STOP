@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ha4:quantum_bomb",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Quantum Bomb"
+      },
+      "minecraft:icon": {
+        "texture": "ha4_quantum_bomb"
+      },
+      "minecraft:projectile": {
+        "minimum_critical_power": 1,
+        "projectile_entity": "ha4:quantum_bomb"
+      },
+      "minecraft:cooldown": {
+        "category": "quantum_bomb",
+        "duration": 2
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": true,
+        "min_draw_duration": 0,
+        "max_draw_duration": 0,
+        "launch_power_scale": 1,
+        "max_launch_power": 2,
+        "scale_power_by_draw_duration": false
+      }
+    }
+  }
+}

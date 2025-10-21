@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ha4:time_stop"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "212",
+      "101",
+      "212"
+    ],
+    "key": {
+      "2": { "item": "minecraft:netherite_ingot" },
+      "1": { "item": "minecraft:nether_star" },
+      "0": { "item": "minecraft:clock" }
+  },
+    "result": [
+      { "item": "ha4:time_stop" }
+    ]
+  }
+}
