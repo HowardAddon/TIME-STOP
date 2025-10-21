@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ha4:quantum_bomb",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": { "default": "textures/ha4_null" },
+      "geometry": { "default": "geometry.ha4_empty" },
+      "animations": {
+        "an1": "animation.ha4_quantum_bomb"
+      },
+      "scripts": {
+        "animate": [
+          "an1"
+        ]
+      },
+      "particle_effects": {
+        "quantum_bomb": "ha4:quantum_bomb",
+        "quantum_bomb_2": "ha4:quantum_bomb_2",
+        "quantum_bomb_3": "ha4:quantum_bomb_3",
+        "quantum_bomb_4": "ha4:quantum_bomb_4"
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "enable_attachables": true
+
+
+
+    }
+  }
+}

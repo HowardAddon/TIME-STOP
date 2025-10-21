@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "this addon is made by Howard Addon",
+    "name": "time stop rp (HowardAddon)",
+    "uuid": "539aa298-a92f-4f68-9513-08aba23641e2",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "02d293d8-9bc3-42dd-81ce-d5dda8b44f67",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

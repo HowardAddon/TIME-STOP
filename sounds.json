@@ -1,0 +1,12 @@
+{
+  "entity_sounds": {
+    "entities": {
+
+"ha4:quantum_bomb": { "volume": 0, "pitch": [ 0.9, 1.1 ], "events": { "shoot" : { "pitch" : [ 0.8, 1.2 ], "sound" : "mob.beacon.power", "volume" : 0 }, "attack.strong" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "cast.spell" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "step" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "hurt" : { "pitch" : 3.0, "sound" : "mob.beacon.power", "volume" : 0 }, "death" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 } } },
+"ha4:quantum_bomb_2": { "volume": 0, "pitch": [ 0.9, 1.1 ], "events": { "shoot" : { "pitch" : [ 0.8, 1.2 ], "sound" : "mob.beacon.power", "volume" : 0 }, "attack.strong" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "cast.spell" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "step" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 }, "hurt" : { "pitch" : 3.0, "sound" : "mob.beacon.power", "volume" : 0 }, "death" : { "pitch" : 1.0, "sound" : "mob.beacon.power", "volume" : 0 } } }
+
+
+
+    }
+  }
+}

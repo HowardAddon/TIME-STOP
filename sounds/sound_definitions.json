@@ -1,0 +1,18 @@
+{
+      "ha4_quantum_bomb_stop" : {
+         "__use_legacy_max_distance" : "true",
+         "category" : "hostile", "max_distance" : null, "min_distance" : null,
+         "sounds" : [
+            { "name" : "sounds/quantum_bomb_stop", "volume" : 2.0, "pitch" : 1.0 }
+         ]
+      },
+      "ha4_quantum_bomb_explode" : {
+         "__use_legacy_max_distance" : "true",
+         "category" : "hostile", "max_distance" : null, "min_distance" : null,
+         "sounds" : [
+            { "name" : "sounds/quantum_bomb_explode", "volume" : 2.0, "pitch" : 1.0 }
+         ]
+      }
+
+
+}

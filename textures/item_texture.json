@@ -1,0 +1,10 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "ha4_time_stop": { "textures": "textures/items/time_stop" },
+    "ha4_temporal_fragment": { "textures": "textures/items/temporal_fragment" },
+    "ha4_quantum_bomb": { "textures": "textures/items/quantum_bomb" }
+
+  }
+}

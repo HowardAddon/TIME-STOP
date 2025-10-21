@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ha4_quantum_bomb": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 9,
+			"bones": {
+				"loc": {
+					"position": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "quantum_bomb",
+					"locator": "loc"
+				}
+			}
+		},
+		"animation.ha4_quantum_bomb_2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 9,
+			"bones": {
+				"loc": {
+					"position": [0, 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "quantum_bomb_stop"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "quantum_bomb",
+					"locator": "loc"
+				},
+				"0.0417": [
+					{
+						"effect": "quantum_bomb_2",
+						"locator": "loc"
+					},
+					{
+						"effect": "quantum_bomb_3",
+						"locator": "loc"
+					},
+					{
+						"effect": "quantum_bomb_4",
+						"locator": "loc"
+					}
+				]
+			}
+		},
+		"animation.ha4_quantum_bomb_2_2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 9,
+			"bones": {
+				"loc": {
+					"position": [0, 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "quantum_bomb_explode"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "quantum_bomb_3"
+				}
+			}
+		}
+	}
+}
